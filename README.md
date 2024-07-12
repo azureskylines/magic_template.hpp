@@ -18,6 +18,11 @@ auto print_value() -> void {
     std::cout << value_str << std::endl;
 }
 
+// instead of of_arg(), you can also use of()
+magic_template::of<T>()
+// being the equivalent of
+magic_template::of_arg<__FUNCSIG__, "T">()
+
 // example:
 print_type<int>(); // "int"
 print_type<std::string>(); // "std::basic_string<char>"
