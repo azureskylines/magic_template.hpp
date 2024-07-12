@@ -29,5 +29,5 @@ print_value<7>(); // "7"
 ```
 
 ## credits
-BasedInc/libhat for fixed_string
-magic_enum for the general idea
+- BasedInc/libhat for fixed_string
+- magic_enum for the general idea
