@@ -1,7 +1,7 @@
 # magic_template.hpp
 wacky compiler hack, jank beware
 
-### c++20 or above
+### c++20 or above, msvc/clang-cl
 
 ## usage
 
