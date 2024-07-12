@@ -153,4 +153,9 @@ namespace magic_template {
         constexpr auto size = find_arg(t_sig.c_str(), t_arg.c_str()).size();
         return fixed_string<size>{std::string(str.begin(), str.end())};
     }
+
+    template<auto t_forwarded>
+    consteval auto of() -> auto {
+        return of_arg<__FUNCSIG__, "t_forwarded">();
+    }
 }
